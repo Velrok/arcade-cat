@@ -1,5 +1,5 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    _87.setVelocity(0, -100)
+    _87.setVelocity(0, -200)
 })
 let _87: Sprite = null
 scene.setBackgroundColor(9)
@@ -24,3 +24,4 @@ _87 = sprites.create(img`
 controller.moveSprite(_87, 100, 0)
 tiles.setCurrentTilemap(tilemap`level1`)
 _87.ay = 350
+scene.cameraFollowSprite(_87)
